@@ -20,9 +20,9 @@ def save_object(file_path, obj):
             pickle.dump(obj, file_obj)
 
     except Exception as e:
-        raise CustomException(e, sys) # step-1 finish
+        raise CustomException(e, sys) # step-1
     
-def evaluate_models(X_train, y_train,X_test,y_test,models,param):
+def evaluate_models(X_train, y_train,X_test,y_test,models,param):#this mentioned in model trainer for utils.py
     try:
         report = {}
 
